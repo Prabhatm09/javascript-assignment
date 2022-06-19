@@ -10,13 +10,24 @@
 
 // 2. Print the sum of all even numbers in a range from a to b.(including a .,b) 
 
-let sum = 0
-let firstNumber = parseInt(process.argv[2]);
-let secondNumber = parseInt(process.argv[3]);
-for(let i=firstNumber; i<=secondNumber; i++){
-    if(i%2==0){
-        sum = sum + i
-    }
+// let sum = 0
+// let firstNumber = parseInt(process.argv[2]);
+// let secondNumber = parseInt(process.argv[3]);
+// for(let i=firstNumber; i<=secondNumber; i++){
+//     if(i%2==0){
+//         sum = sum + i
+//     }
      
+// }
+// console.log(sum);
+
+// 3. write a program to read the first and last digit of a number
+
+let digit = parseInt(process.argv[2]);{
+
+let firstDigit = Math.floor(digit/10) 
+let lastDigit = digit%10
+
 }
-console.log(sum);
+
+console.log(firstDigit+","+lastDigit) 
