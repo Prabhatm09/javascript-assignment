@@ -23,11 +23,25 @@
 
 // 3. write a program to read the first and last digit of a number
 
-let digit = parseInt(process.argv[2]);{
+// let digit = parseInt(process.argv[2]);{
 
-let firstDigit = Math.floor(digit/10) 
-let lastDigit = digit%10
+// let firstDigit = Math.floor(digit/10) 
+// let lastDigit = digit%10
 
-}
+// }
 
-console.log(firstDigit+","+lastDigit) 
+// console.log(firstDigit+","+lastDigit) 
+
+// 4. check whether the given number is an armstrong number or not?
+
+
+ let num = 408;
+ let firstDigit = Math.floor(num/100);
+ let secondDigit = Math.floor((num%100)/10);
+ let lastDigit = ((num%100)%10);
+let armstrong = firstDigit**3 + secondDigit**3 + lastDigit**3 
+ if( armstrong == num){
+  console.log("Its an armstrong number");
+ }else{
+  console.log("Its not a  armstrong number");
+ }
