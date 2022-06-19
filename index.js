@@ -48,13 +48,28 @@
 
 // 5. take two number and find product of all number between them satify following conditions
 
-let number = parseInt(process.argv[2]);
-let number_second = parseInt(process.argv[3]);
-let product = 1;
-for(i=number; i<=number_second; i++){
-    let secondLastDigit = i%10;
-    if(i%2==0 && secondLastDigit ==4)
-    product =product*i;
-}
-console.log(product);
+// let number = parseInt(process.argv[2]);
+// let number_second = parseInt(process.argv[3]);
+// let product = 1;
+// for(i=number; i<=number_second; i++){
+//     let secondLastDigit = i%10;
+//     if(i%2==0 && secondLastDigit ==4)
+//     product =product*i;
+// }
+// console.log(product);
 
+
+// 6.take a number and return all the even digit of the number
+// let number = parseInt(process.argv[2])
+
+
+let number = parseInt(process.argv[2]);
+
+for(i=1; i<=number; i++){
+    if(i%2==0){
+       
+        console.log(i);
+    }
+}
+    
+    
