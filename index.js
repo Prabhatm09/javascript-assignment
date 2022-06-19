@@ -35,13 +35,26 @@
 // 4. check whether the given number is an armstrong number or not?
 
 
- let num = 408;
- let firstDigit = Math.floor(num/100);
- let secondDigit = Math.floor((num%100)/10);
- let lastDigit = ((num%100)%10);
-let armstrong = firstDigit**3 + secondDigit**3 + lastDigit**3 
- if( armstrong == num){
-  console.log("Its an armstrong number");
- }else{
-  console.log("Its not a  armstrong number");
- }
+//  let num = 408;
+//  let firstDigit = Math.floor(num/100);
+//  let secondDigit = Math.floor((num%100)/10);
+//  let lastDigit = ((num%100)%10);
+// let armstrong = firstDigit**3 + secondDigit**3 + lastDigit**3 
+//  if( armstrong == num){
+//   console.log("Its an armstrong number");
+//  }else{
+//   console.log("Its not a  armstrong number");
+//  }
+
+// 5. take two number and find product of all number between them satify following conditions
+
+let number = parseInt(process.argv[2]);
+let number_second = parseInt(process.argv[3]);
+let product = 1;
+for(i=number; i<=number_second; i++){
+    let secondLastDigit = i%10;
+    if(i%2==0 && secondLastDigit ==4)
+    product =product*i;
+}
+console.log(product);
+
