@@ -60,16 +60,32 @@
 
 
 // 6.take a number and return all the even digit of the number
-// let number = parseInt(process.argv[2])
 
+// let number = parseInt(process.argv[2]);
+
+// for(i=1; i<=number; i++){
+//     if(i%2==0){
+       
+//         console.log(i);
+//     }
+// }
+    
+//7. check whether the given number is equal to its reverse number or not
 
 let number = parseInt(process.argv[2]);
 
-for(i=1; i<=number; i++){
-    if(i%2==0){
-       
-        console.log(i);
-    }
-}
+    let rev = Math.floor(number/100) 
+  let rev1 = Math.floor(number/10) 
+  let rev2 = rev1%10 
+  let rev3 = number%10  
+  let sum = rev3*100 + rev2*10 + rev
+  if(number==sum){
+    console.log("yes");
+  }else{
+    console.log("no");
+  }
+
     
-    
+
+
+
