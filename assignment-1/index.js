@@ -74,7 +74,7 @@
 
 let number = parseInt(process.argv[2]);
 
-    let rev = Math.floor(number/100) 
+  let rev = Math.floor(number/100) 
   let rev1 = Math.floor(number/10) 
   let rev2 = rev1%10 
   let rev3 = number%10  
